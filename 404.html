@@ -1,0 +1,12 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<title>ABC a bollywood company has moved to abcdans.com</title>
+<meta name="robots" content="noindex">
+<script>
+// Any old address not covered by a stub: send it to the same path on abcdans.com,
+// which carries its own redirects and a branded 404 for anything unknown.
+var MAP = {"/the-company": "/about/", "/learn-dance": "/learn/", "/cart": "/"};
+var p = location.pathname.replace(/\/+$/, "") || "/";
+location.replace("https://abcdans.com" + (MAP[p] || (p === "/" ? "/" : p + "/")) + location.search + location.hash);
+</script>
+<meta http-equiv="refresh" content="0;url=https://abcdans.com/">
+</head><body><p>ABC a bollywood company now lives at <a href="https://abcdans.com/">abcdans.com</a>.</p></body></html>
